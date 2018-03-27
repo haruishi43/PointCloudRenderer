@@ -1,6 +1,0 @@
-version: "Apple Swift version 4.0.3 (swiftlang-900.0.74.1 clang-900.0.39.2)"
-options: "49b0c7ff7f7b698544ccb3efe635fd89"
-build_time: [1522147436, 683837000]
-inputs:
-  "/Users/haruyaishikawa/Documents/1. ARKit Demos/PointCloudRenderer/PointCloudRenderer/ViewController.swift": [1522147432, 0]
-  "/Users/haruyaishikawa/Documents/1. ARKit Demos/PointCloudRenderer/PointCloudRenderer/AppDelegate.swift": [1522147432, 0]
