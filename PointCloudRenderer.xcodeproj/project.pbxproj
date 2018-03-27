@@ -12,6 +12,10 @@
 		150B1826206A57E900146BC7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 150B1824206A57E900146BC7 /* Main.storyboard */; };
 		150B1828206A57E900146BC7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 150B1827206A57E900146BC7 /* Assets.xcassets */; };
 		150B182B206A57E900146BC7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 150B1829206A57E900146BC7 /* LaunchScreen.storyboard */; };
+		150B1834206A599500146BC7 /* PointCloud.swift in Sources */ = {isa = PBXBuildFile; fileRef = 150B1833206A599500146BC7 /* PointCloud.swift */; };
+		150B1837206A5A0800146BC7 /* PointCloudVertex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 150B1836206A5A0800146BC7 /* PointCloudVertex.swift */; };
+		150B183A206A5A5400146BC7 /* bun_zipper_points.ply in Resources */ = {isa = PBXBuildFile; fileRef = 150B1839206A5A5400146BC7 /* bun_zipper_points.ply */; };
+		150B183C206A5A6A00146BC7 /* dragon_hidden.ply in Resources */ = {isa = PBXBuildFile; fileRef = 150B183B206A5A6A00146BC7 /* dragon_hidden.ply */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +26,10 @@
 		150B1827206A57E900146BC7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		150B182A206A57E900146BC7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		150B182C206A57E900146BC7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		150B1833206A599500146BC7 /* PointCloud.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PointCloud.swift; sourceTree = "<group>"; };
+		150B1836206A5A0800146BC7 /* PointCloudVertex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PointCloudVertex.swift; sourceTree = "<group>"; };
+		150B1839206A5A5400146BC7 /* bun_zipper_points.ply */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = bun_zipper_points.ply; sourceTree = "<group>"; };
+		150B183B206A5A6A00146BC7 /* dragon_hidden.ply */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = dragon_hidden.ply; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +62,42 @@
 		150B181F206A57E800146BC7 /* PointCloudRenderer */ = {
 			isa = PBXGroup;
 			children = (
-				150B1820206A57E800146BC7 /* AppDelegate.swift */,
-				150B1822206A57E800146BC7 /* ViewController.swift */,
-				150B1824206A57E900146BC7 /* Main.storyboard */,
-				150B1827206A57E900146BC7 /* Assets.xcassets */,
-				150B1829206A57E900146BC7 /* LaunchScreen.storyboard */,
 				150B182C206A57E900146BC7 /* Info.plist */,
+				150B1820206A57E800146BC7 /* AppDelegate.swift */,
+				150B1838206A5A3500146BC7 /* Views */,
+				150B1835206A599C00146BC7 /* Model */,
+				150B1832206A590700146BC7 /* Resources */,
 			);
 			path = PointCloudRenderer;
+			sourceTree = "<group>";
+		};
+		150B1832206A590700146BC7 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				150B1839206A5A5400146BC7 /* bun_zipper_points.ply */,
+				150B183B206A5A6A00146BC7 /* dragon_hidden.ply */,
+				150B1827206A57E900146BC7 /* Assets.xcassets */,
+				150B1829206A57E900146BC7 /* LaunchScreen.storyboard */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		150B1835206A599C00146BC7 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				150B1833206A599500146BC7 /* PointCloud.swift */,
+				150B1836206A5A0800146BC7 /* PointCloudVertex.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		150B1838206A5A3500146BC7 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				150B1822206A57E800146BC7 /* ViewController.swift */,
+				150B1824206A57E900146BC7 /* Main.storyboard */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -123,8 +159,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				150B183C206A5A6A00146BC7 /* dragon_hidden.ply in Resources */,
 				150B182B206A57E900146BC7 /* LaunchScreen.storyboard in Resources */,
 				150B1828206A57E900146BC7 /* Assets.xcassets in Resources */,
+				150B183A206A5A5400146BC7 /* bun_zipper_points.ply in Resources */,
 				150B1826206A57E900146BC7 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -136,7 +174,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				150B1837206A5A0800146BC7 /* PointCloudVertex.swift in Sources */,
 				150B1823206A57E800146BC7 /* ViewController.swift in Sources */,
+				150B1834206A599500146BC7 /* PointCloud.swift in Sources */,
 				150B1821206A57E800146BC7 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
